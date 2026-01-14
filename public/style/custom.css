@@ -1,0 +1,116 @@
+:root {
+    --green-primary: #004729;
+    --yellow-primary: #FFC800;
+}
+
+body {
+    background: #fffaf3;
+}
+
+.container-custom {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn-yellow {
+    background-color: var(--yellow-primary);
+    color: #000;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.btn-yellow:hover {
+    background-color: #e6b700;
+}
+
+.bg-green {
+    background-color: var(--green-primary);
+}
+
+
+/* =========================
+   FOOTER SECTION
+========================= */
+.footer {
+    background: #f2f2f2;
+}
+
+.footer-box {
+    background: #FFF9E6;
+    padding: 60px 70px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 2.2fr 1fr 1.2fr 1.2fr;
+    column-gap: 60px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* logo */
+.footer-logo-col img {
+    width: 230px;
+}
+
+/* KOLOM 2 */
+.footer-left h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.footer-left iframe {
+    width: 280px;
+    height: 140px;
+    border: none;
+}
+
+/* COMMON COLUMN */
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+/* CONTACT */
+.contact div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.contact img {
+    width: 18px;
+}
+
+.follow {
+    margin-top: 28px;
+}
+
+.social {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.social img {
+    width: 22px;
+}

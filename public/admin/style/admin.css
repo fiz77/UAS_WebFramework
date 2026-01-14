@@ -1,0 +1,229 @@
+:root {
+    --green: #004729;
+    --yellow: #FFC800;
+}
+
+body {
+    background: #e5e5e5;
+}
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    background: #FBF8F4;
+    padding: 26px 28px;
+}
+
+.sidebar .nav-link {
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.sidebar-menu li a {
+    box-shadow: 4px 4px 7px rgba(0, 69, 45, 0.4);
+    display: block;
+    padding: 10px 16px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    color: #004729;
+    text-decoration: none;
+}
+
+.sidebar-menu li a.active,
+.sidebar-menu li a:hover {
+    background: var(--yellow);
+}
+
+.sidebar-user {
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin-top: 50px;
+}
+
+/* CONTENT */
+.admin-content {
+    flex: 1;
+    padding: 24px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.search-input {
+    border-style: solid;
+    border: 1px solid #004729;
+    max-width: 300px;
+}
+
+.btn-filter {
+    border-style: solid;
+    border: 1px solid #004729;
+    background: var(--yellow);
+    border-radius: 12px;
+}
+
+/* DASHBOARD */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ===== TOP ===== */
+.dashboard-top {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+}
+
+.today-login {
+    align-items: center;
+    justify-content: center;
+    background: #FBF8F4;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #004729;
+}
+
+.today-login strong{
+    font-size: 25px;
+    color: #004729;
+}
+
+.today-login small{
+    font-size: 12px;
+    color: #787878;
+}
+
+
+.login-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* QUICK GRID */
+.dashboard-top {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 24px;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+    
+}
+
+.quick-card {
+    background: #FBF8F4;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 90px;
+    border-style: solid;
+    border: 1px solid #004729;
+}
+
+.quick-card img {
+    width: 36px;
+    height: 36px;
+}
+
+.qc-text strong {
+    display: block;
+    font-size: 14px;
+}
+
+.qc-text small {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* ===== BOTTOM ===== */
+.dashboard-bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 24px;
+}
+
+.chart-card {
+    background: #FBF8F4;
+    border-radius: 16px;
+    padding: 20px;
+    border-style: solid;
+    border: 1px solid #004729;
+}
+
+.calendar-card {
+    background: #FBF8F4;
+    border-style: solid;
+    border: 1px solid #004729;
+    padding: 20px;
+}
+
+/* KALENDER */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.calendar-grid span {
+    padding: 6px 0;
+    border-radius: 8px;
+}
+
+.calendar-grid span.active {
+    background: var(--yellow);
+    font-weight: bold;
+}

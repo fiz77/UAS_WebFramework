@@ -1,0 +1,139 @@
+.cart-page {
+    font-size: 14px;
+}
+
+.cart-card,
+.summary-card {
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+.cart-table thead {
+    background: #f9c600;
+}
+
+.cart-table thead th {
+    font-weight: 600;
+    border: none;
+}
+
+.cart-table td {
+    padding: 18px 16px;
+    border-color: #f1f1f1;
+}
+
+.product-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.qty-box {
+    display: inline-flex;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding: 4px 10px;
+    gap: 12px;
+}
+
+.qty-box button {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.remove-btn {
+    color: #dc3545;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cart-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+}
+
+.coupon-input {
+    max-width: 180px;
+    border-radius: 20px;
+}
+
+.btn-apply {
+    background: #22c55e;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.clear-cart {
+    margin-left: auto;
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.summary-list .discount {
+    color: #dc3545;
+}
+
+.summary-list .total {
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 14px;
+}
+
+.btn-checkout {
+    background: #22c55e;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.info-section .info-box {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    padding: 20px;
+}
+
+.info-section p {
+    margin: 5px 0 0;
+    color: #6c757d;
+}
+
+.info-icon {
+    font-size: 32px;
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.info-box strong {
+    display: block;
+    margin-top: 5px;
+}
+
+.info-box p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #6c757d;
+}
