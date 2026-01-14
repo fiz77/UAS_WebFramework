@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Policies;
+
+use App\Models\Admin;
+use App\Models\User;
+use Illuminate\Auth\Access\Response;
+
+class AdminPolicy
+{
+    /**
+     * Determine whether the user can view any models.
+     */
+    public function viewAny(User $user): bool
+    {
+        return false;
+    }
+
+    /**
+     * Determine whether the user can view the model.
+     */
+    public function view(User $user, Admin $admin): bool
+    {
+        return false;
+    }
+
+    /**
+     * Determine whether the user can create models.
+     */
+    public function create(User $user): bool
+    {
+        // # Hanya user 'admin@gmail.com' saja yang bisa menjalankan proses create
+        // return $user->email === 'admin@gmail.com';
+        // # User 'admin@gmail.com' dan 'support@gmail.com' bisa menjalankan proses create
+        // return ($user->email === 'admin@gmail.com')
+        // OR ($user->email === 'support@gmail.com');
+        // # User 'admin@gmail.com' dan 'support@gmail.com' bisa menjalankan proses create
+        return in_array($user->email,[
+        'admin@gmail.com',
+        'support@gmail.com',
+        ]);
+    }
+
+    /**
+     * Determine whether the user can update the model.
+     */
+    public function update(User $user, Admin $admin): bool
+    {
+        return false;
+    }
+
+    /**
+     * Determine whether the user can delete the model.
+     */
+    public function delete(User $user, Admin $admin): bool
+    {
+        return in_array($user->email,[
+        'admin@gmail.com'
+        ]);
+    }
+
+    /**
+     * Determine whether the user can restore the model.
+     */
+    public function restore(User $user, Admin $admin): bool
+    {
+        return false;
+    }
+
+    /**
+     * Determine whether the user can permanently delete the model.
+     */
+    public function forceDelete(User $user, Admin $admin): bool
+    {
+        return false;
+    }
+}
